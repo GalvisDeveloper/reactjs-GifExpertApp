@@ -14,13 +14,11 @@ const AddCategory = ({ setCategories }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (inputValue.trim().length === 0) {
-            alert("Ingrese una categoría antes de añadirla", "Alerta");
-        } else if (inputValue.trim().length === 1) {
-            alert("Añada una categoria con nombre más largo", "Alerta");
-        } else {
+        if (inputValue.trim().length > 2) {
             setCategories(catg => [...catg, inputValue]);
             setInputValue("");
+        } else {
+            alert("Añada una categoria con nombre más largo", "Alerta");
         }
     }
 
