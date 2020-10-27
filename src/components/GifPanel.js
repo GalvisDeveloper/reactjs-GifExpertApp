@@ -13,7 +13,7 @@ export const GifPanel = ({ category }) => {
             return {
                 id: img.id,
                 title: img.title,
-                url: img.images?.downsized.medium.url,
+                url: img.images?.downsized_medium.url,
             }
         });
         console.log(data);
