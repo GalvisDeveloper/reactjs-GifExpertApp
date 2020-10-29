@@ -1,24 +1,18 @@
 
 
 import React, { useEffect, useState } from 'react'
+import { GifGridPanel } from './GifGridPanel';
 
 export const GifPanel = ({ category }) => {
 
-    const [count, setCount] = useState(0);
+    const [images, setImages] = useState([]);
 
     useEffect(() => {
         getGif();
-    }, [])   /* <<<<----- LISTA DE DEPENDENCIAS */ 
-
-    // useEffect(() => {
-    //     effect
-    //     return () => {
-    //         cleanup
-    //     };
-    // }, [input]);
+    }, [])
 
     const getGif = async () => {
-        const url = "https://api.giphy.com/v1/gifs/search?q=Dragon+Ball&limit=30&api_key=kHA2LwEs6IlTUv66ibdSl7cc1CkB2VHD";
+        const url = "https://api.giphy.com/v1/gifs/search?q=Big+Bang+theory&limit=30&api_key=kHA2LwEs6IlTUv66ibdSl7cc1CkB2VHD";
         const resp = await fetch(url);
         const { data } = await resp.json();
 
@@ -31,13 +25,20 @@ export const GifPanel = ({ category }) => {
         });
         // console.log(data);
         console.log(gifs);
+        setImages(gifs);
     }
 
     return (
         <div>
             <h3>{category}</h3>
-            <h3>{count}</h3>
-            <button type="submit" onClick={() => setCount(count + 1)}>Sume</button>
+            {
+                images.map(img => (
+                    <GifGridPanel
+                        key={img.id}
+                        {...img}
+                    />
+                ))
+            }
         </div>
     )
 }
