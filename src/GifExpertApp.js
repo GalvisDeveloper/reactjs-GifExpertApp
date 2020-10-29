@@ -19,12 +19,12 @@ const GifExpertApp = ({ mensaje }) => {
 
             <ol>
                 {
-                    categories.map(category => {
-                        return <GifPanel
+                    categories.map(category => (
+                        <GifPanel
                             category={category}
                             key={uniqid()}
                         />
-                    })
+                    ))
                 }
             </ol>
 

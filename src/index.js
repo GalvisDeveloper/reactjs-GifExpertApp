@@ -10,7 +10,8 @@ import GifExpertApp from './GifExpertApp';
 // const divApp = document.querySelector('#app');
 
 ReactDOM.render(
-  <GifExpertApp mensaje="GifExpertApp funcionando" />, document.getElementById('app')
+  <GifExpertApp mensaje="GifExpertApp funcionando" />,
+  document.getElementById('app')
 );
 
 // If you want your app to work offline and load faster, you can change
