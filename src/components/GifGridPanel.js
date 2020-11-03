@@ -2,16 +2,12 @@
 
 import React from 'react'
 
-export const GifGridPanel = (props) => {
+export const GifGridPanel = ({url, title}) => {
 
-
-    // const [lista, setLista] = useState(img);
-    console.log(props);
     return (
-        <div>
-            {/* <li key={props.id}>{props.title}</li> */}
-            <p>Gif: {props.title}</p>
-            <img src={props.url} alt={props.title} />
+        <div className = "card">
+            <p>Gif: {title}</p>
+            <img src={url} alt={title} />
         </div>
     )
 }

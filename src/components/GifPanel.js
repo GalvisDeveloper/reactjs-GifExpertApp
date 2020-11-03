@@ -29,7 +29,7 @@ export const GifPanel = ({ category }) => {
     }
 
     return (
-        <div>
+        <div className="card-grid">
             <h3>{category}</h3>
             {
                 images.map(img => (
