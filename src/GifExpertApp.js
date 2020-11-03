@@ -21,9 +21,8 @@ const GifExpertApp = ({ mensaje }) => {
                 {
                     categories.map(category => (
                         <GifPanel
-                            {...category}
-                            //lo mismo a tener-> category = {category}
                             key={uniqid()}
+                            category={category}
                         />
                     ))
                 }

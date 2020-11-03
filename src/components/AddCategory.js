@@ -15,7 +15,7 @@ const AddCategory = ({ setCategories }) => {
         e.preventDefault();
 
         if (inputValue.trim().length > 2) {
-            setCategories(catg => [...catg, inputValue]);
+            setCategories(catg => [inputValue, ...catg]);
             setInputValue("");
         } else {
             alert("Añada una categoria con nombre más largo", "Alerta");
