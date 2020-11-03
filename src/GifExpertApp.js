@@ -9,7 +9,7 @@ import uniqid from 'uniqid';
 
 const GifExpertApp = ({ mensaje }) => {
 
-    const [categories, setCategories] = useState(['Primera']);
+    const [categories, setCategories] = useState(['Fairy Tail']);
 
     return (
         <>

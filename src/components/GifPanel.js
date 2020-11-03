@@ -2,25 +2,17 @@
 
 import React from 'react'
 import { useFetchGifs } from '../hooks/useFetchGifs'
-// import { GifGridPanel } from './GifGridPanel';
-// import { getGifs } from '../helpers/getGifs';
+import { GifGridPanel } from './GifGridPanel';
 
 export const GifPanel = ({ category }) => {
 
-    // const [images, setImages] = useState([]);
-    const { loading } = useFetchGifs();
-
-
-    // useEffect(() => {
-    //     getGifs(category)
-    //         .then(setImages);
-    // }, [category])
+    const { data:images, loading } = useFetchGifs(category);
 
     return (
         <>
             <h3>{category}</h3>
-            {loading? 'Cargando...' : 'Data cargada'}
-            {/* <div className="card-grid">
+            {loading && <p>Loading...</p>}
+            <div className="card-grid">
                 {
                     images.map(img => (
                         <GifGridPanel
@@ -29,7 +21,7 @@ export const GifPanel = ({ category }) => {
                         />
                     ))
                 }
-            </div> */}
+            </div>
         </>
     )
 }
