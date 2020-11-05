@@ -12,7 +12,7 @@ const GifExpertApp = ({ mensaje }) => {
 
     return (
         <>
-            <h2>{mensaje}</h2>
+            <h2 className="animate__animated animate__bounce animate__slideInDown">{mensaje}</h2>
             <AddCategory setCategories={setCategories} />
             <hr />
 
