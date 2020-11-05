@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 
 import AddCategory from './components/AddCategory';
 import { GifPanel } from './components/GifPanel';
-import uniqid from 'uniqid';
 
 const GifExpertApp = ({ mensaje }) => {
 
@@ -21,7 +20,7 @@ const GifExpertApp = ({ mensaje }) => {
                 {
                     categories.map(category => (
                         <GifPanel
-                            key={uniqid()}
+                            key={category}
                             category={category}
                         />
                     ))

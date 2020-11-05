@@ -15,7 +15,7 @@ const AddCategory = ({ setCategories }) => {
         e.preventDefault();
 
         if (inputValue.trim().length > 2) {
-            setCategories(catg => [inputValue, ...catg]);
+            setCategories(catg => [inputValue, ...catg, ]);
             setInputValue("");
         } else {
             alert("Añada una categoria con nombre más largo", "Alerta");
@@ -28,6 +28,7 @@ const AddCategory = ({ setCategories }) => {
                 type="text"
                 value={inputValue}
                 onChange={handleInputChange}
+                placeholder="Ingrese una categoría para generar GIFs de ésta"
             />
         </form>
     );

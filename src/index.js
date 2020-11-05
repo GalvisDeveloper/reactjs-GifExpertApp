@@ -10,7 +10,7 @@ import GifExpertApp from './GifExpertApp';
 // const divApp = document.querySelector('#app');
 
 ReactDOM.render(
-  <GifExpertApp mensaje="GifExpertApp funcionando" />,
+  <GifExpertApp mensaje="GifExpertApp with ReactJs" />,
   document.getElementById('app')
 );
 
