@@ -132,12 +132,19 @@ a {
     padding: 6px;
   }
 
-  .footer,
   .nav {
     text-align: center;
     background-color: #3b4fe6;
     height: 10vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer {
+    text-align: center;
+    height: auto;
+    display: inline-block;
     justify-content: center;
     align-items: center;
   }
@@ -155,5 +162,9 @@ a {
     background-size: auto;
     background-repeat: round;
     background-attachment: fixed;
+  }
+
+  h1{
+    color: white;
   }
 }
