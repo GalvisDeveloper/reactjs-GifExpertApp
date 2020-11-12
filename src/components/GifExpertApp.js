@@ -7,7 +7,7 @@ import { GifPanel } from './GifPanel';
 
 const GifExpertApp = ({ title }) => {
 
-    const [categories, setCategories] = useState(['Fairy Tail']);
+    const [categories, setCategories] = useState(['Motogp']);
 
     return (
         <div className="container">
