@@ -28,7 +28,7 @@ const AddCategory = ({ setCategories }) => {
                 type="text"
                 value={inputValue}
                 onChange={handleInputChange}
-                placeholder="Ingrese una categoría para generar GIFs de ésta"
+                placeholder="Type here the category of gif that you want"
             />
         </form>
     );

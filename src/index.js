@@ -3,14 +3,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import GifExpertApp from './GifExpertApp';
+import App from './App';
+// import GitHubIcon from '@material-ui/icons/GitHub';
 
-
-
-// const divApp = document.querySelector('#app');
 
 ReactDOM.render(
-  <GifExpertApp mensaje="GifExpertApp with ReactJs" />,
+  <App
+    message="Gif Generator"
+    title="Search any Gif that you want"
+    property="Designed by"
+  />,
   document.getElementById('app')
 );
 
@@ -18,3 +20,4 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 
+// Cristian Bustos"+ <GitHubIcon />  +"@galvisdeveloper - 2020 ©

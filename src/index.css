@@ -3,13 +3,33 @@
 }
 
 body {
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-image: url("./img/background.gif");
+  background-size: auto;
+  background-repeat: round;
+  background-attachment: fixed;
 }
 
 input {
   color: blue;
   font-size: 1.2rem;
+  width: 99%;
+  height: 40px;
+}
+
+form {
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+div#app {
+  background-color: rgb(248,248,245, 0.9);
+  display: block;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -20,6 +40,7 @@ input {
   margin-right: 10px;
   overflow: hidden;
   width: 25vw;
+  background: white;
 }
 
 .card-grid {
@@ -40,8 +61,32 @@ input {
   margin-right: auto;
 }
 
+ol {
+  padding-inline-start: 30px;
+  padding-inline-end: 30px;
+}
+
+.title {
+  padding: 6px;
+}
+
+.footer,
+.nav {
+  text-align: center;
+  background-color: #3b4fe6;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  /* Aquí van los estilos */
   .card img {
     max-height: 180px;
     display: block;
@@ -50,7 +95,8 @@ input {
   }
 
   body {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .card {
@@ -61,6 +107,7 @@ input {
     margin-right: 10px;
     overflow: hidden;
     width: 90vw;
+    background: white;
   }
 
   .card-grid {
@@ -73,6 +120,40 @@ input {
   input {
     color: blue;
     font-size: 0.8rem;
-    width: 100%;
+    width: 90%;
+  }
+
+  ol {
+    padding-inline-start: 20px;
+    padding-inline-end: 10px;
+  }
+
+  .title {
+    padding: 6px;
+  }
+
+  .footer,
+  .nav {
+    text-align: center;
+    background-color: #3b4fe6;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+  }
+
+  body {
+    padding-left: 20px;
+    padding-right: 15px;
+    background-image: url("./img/background.gif");
+    background-size: auto;
+    background-repeat: round;
+    background-attachment: fixed;
   }
 }
