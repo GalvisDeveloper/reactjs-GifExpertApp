@@ -1,6 +1,4 @@
 
-import React from 'react';
-const { shallow } = require("enzyme")
 import '@testing-library/jest-dom';
 import { getGifs } from '../../helpers/getGifs';
 

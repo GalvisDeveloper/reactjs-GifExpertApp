@@ -1,5 +1,5 @@
 import React from 'react';
-const { shallow } = require("enzyme")
+import { shallow } from 'enzyme';
 import '@testing-library/jest-dom';
 import { GifGridPanel } from '../../components/GifGridPanel';
 
