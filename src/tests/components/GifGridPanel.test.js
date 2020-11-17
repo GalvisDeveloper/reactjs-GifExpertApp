@@ -1,7 +1,7 @@
 import React from 'react';
 const { shallow } = require("enzyme")
-import { GifGridPanel } from '../../components/GifGridPanel';
 import '@testing-library/jest-dom';
+import { GifGridPanel } from '../../components/GifGridPanel';
 
 
 describe('Pruebas en el <GifGridPanel />', () => {
