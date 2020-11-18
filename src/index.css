@@ -86,6 +86,116 @@ a {
   font-size: 2em;
 }
 
+/* Por debajo de 1000px */
+@media screen and (max-width: 1000px) {
+  .footer > h1,
+  a {
+    font-size: 18px;
+  }
+}
+
+/* Por debajo de 630px */
+@media screen and (max-width: 630px) {
+  .footer > h1,
+  a {
+    font-size: 14px;
+  }
+
+  ol {
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+  }
+}
+
+/* Por debajo de 525px */
+@media screen and (max-width: 525px) {
+  .footer > h1,
+  a {
+    font-size: 12px;
+  }
+
+  ol {
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+  }
+
+  .card {
+    width: 70vw;
+  }
+}
+
+/* Responsive de los card */
+@media screen and (min-width: 430px) and (max-width: 700px) {
+  .card {
+    margin-left: 20px;
+    width: 40vw;
+  }
+
+  ol {
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+  }
+}
+
+/* Por debajo de 480px */
+@media screen and (max-width: 480px) {
+  .title {
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  input {
+    font-size: 11px;
+  }
+
+  .footer {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    margin-left: 20px;
+    width: 60vw;
+  }
+
+  ol {
+    padding-inline-start: 0px;
+    padding-inline-end: 10px;
+  }
+}
+
+/* Last media */
+@media screen and (max-width: 360px) {
+  body {
+    padding-right: 2px;
+    padding-left: 2px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  input {
+    font-size: 9px;
+  }
+
+  .card {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  ol {
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+  }
+}
+
+/* Dispositivios móviles */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   .card img {
     max-height: 180px;
@@ -147,6 +257,11 @@ a {
     display: inline-block;
     justify-content: center;
     align-items: center;
+  }
+
+  .footer > h1,
+  a {
+    font-size: 12px;
   }
 
   a {
