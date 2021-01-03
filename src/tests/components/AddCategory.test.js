@@ -7,8 +7,15 @@ import "@testing-library/jest-dom";
 
 describe('Testeando el componente AddCategory', () => {
 
-    const setCategories = () => { };
-    const wrapper = shallow(<AddCategory setCategories={setCategories} />);
+    // const setCategories = () => { };
+    const setCategories = jest.fn();
+    let wrapper = shallow(<AddCategory setCategories={setCategories} />);
+
+    beforeEach(() => {
+        jest.clearAllMocks();
+        wrapper = shallow(<AddCategory setCategories={setCategories} />);
+    })
+
 
     test('Prueba 1: Coincidir con el snapshot ', () => {
         expect(wrapper).toMatchSnapshot();
@@ -25,5 +32,13 @@ describe('Testeando el componente AddCategory', () => {
 
         // expect(wrapper.find('p').text().trim()).toBe(value);
     })
+
+    test('Prueba 3: No debe accionarse el submit', () => {
+        // const submit = '';
+        wrapper.find('form').simulate('submit', { preventDefault() { } })
+
+        expect(setCategories).not.toHaveBeenCalled();
+    })
+
 
 });
