@@ -15,7 +15,7 @@ const AddCategory = ({ setCategories }) => {
         e.preventDefault();
 
         if (inputValue.trim().length > 2) {
-            setCategories(catg => [inputValue, ...catg, ]);
+            setCategories(catg => [inputValue, ...catg,]);
             setInputValue("");
         } else {
             alert("Añada una categoria con nombre más largo", "Alerta");
@@ -24,6 +24,7 @@ const AddCategory = ({ setCategories }) => {
 
     return (
         <form onSubmit={handleSubmit}>
+            {/* <p>{inputValue}</p> */}
             <input
                 type="text"
                 value={inputValue}
