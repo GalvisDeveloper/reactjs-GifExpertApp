@@ -41,4 +41,24 @@ describe('Testeando el componente AddCategory', () => {
     })
 
 
+    test('Prueba 4(tarea): Se debe llama el setCategories y limpiar la caja de texto', () => {
+
+        const value = 'test4';
+        const input = wrapper.find('input');
+        //1. simular el inputChange
+        input.simulate('change', { target: { value } });
+
+        //2. simular el submit
+        wrapper.find('form').simulate('submit', { preventDefault() { } })
+
+        //3. llamar el setCategories
+        expect(setCategories).toHaveBeenCalled();
+        // expect(setCategories).toHaveBeenCalledWith(expect.any(Function)); // Se espera que se haya llamado con cualquier tipo de funcion
+
+        //4. el value debe estar vacio
+        expect(input.prop('value')).toBe('');
+        // console.log(input);
+    })
+
+
 });
