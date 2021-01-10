@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testeando el componente AddCategory Prueba 1: Coincidir con el snapshot  1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    placeholder="Type here the category of gif that you want"
+    type="text"
+    value=""
+  />
+</form>
+`;

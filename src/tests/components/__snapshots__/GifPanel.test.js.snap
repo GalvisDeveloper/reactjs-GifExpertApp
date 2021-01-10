@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <GifPanel /> Prueba 1: Coincidir el snapshot  1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__bounce animate__rotateIn"
+  >
+    Moto gp
+  </h3>
+  <p
+    className="animate__animated animate__bounce animate__flash"
+  >
+    Loading...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`Pruebas en el componente <GifPanel /> Prueba 2: Mostrar items cuando se cargan las imagenes useFetchGifs(customHook) 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__bounce animate__rotateIn"
+  >
+    Moto gp
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridPanel
+      id="01"
+      key="01"
+      title="Google"
+      url="https://www.google.com/"
+    />
+  </div>
+</Fragment>
+`;
