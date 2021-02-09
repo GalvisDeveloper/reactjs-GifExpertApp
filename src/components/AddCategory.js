@@ -18,7 +18,7 @@ const AddCategory = ({ setCategories }) => {
             setCategories(catg => [inputValue, ...catg,]);
             setInputValue("");
         } else {
-            alert("Añada una categoria con nombre más largo", "Alerta");
+            // alert("Añada una categoria con nombre más largo", "Alerta");
         }
     }
 
