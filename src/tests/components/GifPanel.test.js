@@ -27,7 +27,12 @@ describe('Pruebas en el componente <GifPanel />', () => {
             id: '01',
             url: 'https://www.google.com/',
             title: 'Google'
-        }]
+        },
+        {
+            id: '02',
+            url: 'https://www.youtube.com/',
+            title: 'Youtube'
+        }];
 
         useFetchGifs.mockReturnValue({
             data: gifs,
@@ -35,7 +40,10 @@ describe('Pruebas en el componente <GifPanel />', () => {
         });
 
         const wrapper = shallow(<GifPanel category={category} />);
-        expect(wrapper).toMatchSnapshot();
+
+        // expect(wrapper).toMatchSnapshot();
+        expect(wrapper.find('p').exists()).toBe(false);
+        expect(wrapper.find('GifGridPanel').length).toBe(gifs.length);
     })
 
 

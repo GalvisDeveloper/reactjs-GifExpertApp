@@ -3,11 +3,15 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import AddCategory from './AddCategory';
-import { GifPanel } from './GifPanel';
+import GifPanel from './GifPanel';
 
+
+//  Should receive an "defaultCategories = []" inside props for test it
 const GifExpertApp = ({ title }) => {
 
-    const [categories, setCategories] = useState(['Motogp']);
+    // const [categories, setCategories] = useState(defaultCategories); *this is just for test*
+
+    const [categories, setCategories] = useState(['Moto gp'])
 
     return (
         <div className="container">

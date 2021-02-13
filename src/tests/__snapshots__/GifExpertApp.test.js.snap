@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas al componente <GifExpertApp /> Prueba 1: El componente debe coincidir con el snapshot  1`] = `
+<div
+  className="container"
+>
+  <div
+    className="title"
+  >
+    <h2
+      className="animate__animated animate__bounce animate__slideInDown animate_fast"
+    >
+      Search any Gif that you want
+    </h2>
+  </div>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol>
+    <GifPanel
+      category="Moto gp"
+      key="Moto gp"
+    />
+  </ol>
+</div>
+`;
+
+exports[`Pruebas al componente <GifExpertApp /> Prueba 2:  Debe mostrar una lista de categorias  1`] = `
+<div
+  className="container"
+>
+  <div
+    className="title"
+  >
+    <h2
+      className="animate__animated animate__bounce animate__slideInDown animate_fast"
+    />
+  </div>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol>
+    <GifPanel
+      category="Moto gp"
+      key="Moto gp"
+    />
+  </ol>
+</div>
+`;
